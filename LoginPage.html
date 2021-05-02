@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="LoginPage.css" />
+    <title>Sign in</title>
+    <header id="header">
+      <h1 id="h1">WhatsOnYourMind?</h1>
+      <img
+        id="img"
+        src="https://cdn2.vectorstock.com/i/1000x1000/09/86/thinking-pop-art-woman-vector-5520986.jpg"
+        alt="girl thinking"
+        width="100px"
+        height="100px"
+      />
+    </header>
+  </head>
+  <body>
+    <form id="my_form">
+      <div id="form_header">Sign in</div>
+      <div id="email_div">
+        <label for="email"><b>Email</b></label>
+        <input type="text" id="ip1" name="email" required />
+      </div>
+
+      <div id="password_div">
+        <label for="password" ;><b>Password</b></label>
+        <input type="password" id="ip2" name="password" required />
+      </div>
+
+      <div id="create_account_controls">
+        <p id="dont_have_an_account">Dont Have an Account?</p>
+        <button id="ca_button">Create Account</button>
+        <script type="text/javascript">
+          document.getElementById("ca_button").onclick = function () {
+            location.href = "CreateAcc.html";
+          };
+        </script>
+        <button id="fp_button">Forgot Password?</button>
+        <script type="text/javascript">
+          document.getElementById("fp_button").onclick = function () {
+            alert("Sucks to Suck");
+          };
+        </script>
+      </div>
+      <div id="navigate_controls">
+        <button id="go_button">Go</button>
+        <script type="text/javascript">
+          document.getElementById("go_button").onclick = function () {
+            location.href = "mainpage.html";
+          };
+        </script>
+        <button id="back_button">Back</button>
+      </div>
+    </form>
+  </body>
+</html>

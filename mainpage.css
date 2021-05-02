@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #30313f;
+  height: 100%;
+}
+
+#container {
+  padding: 6px;
+  width: 70vw;
+  min-height: 70vh;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #36384a;
+  display: grid;
+  grid-template-areas:
+    "display"
+    "input";
+  grid-template-rows: 1fr 60px;
+  border: solid 2px #4e5593;
+  box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+#content {
+  padding: 20px;
+}
+
+#SendMessage {
+  grid-area: input;
+  display: flex;
+  justify-content: center;
+}
+#messageColumn {
+  width: 700px;
+  height: 40px;
+  background-color: #36384a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  border: solid 2px #4e5593;
+  color: white;
+}
+
+#btn {
+  width: auto;
+  height: 45px;
+  cursor: pointer;
+  background-color: #36384a;
+  border: solid 2px #4e5593;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 6px;
+}
+
+#btn:hover {
+  background-color: #5e67b6;
+  color: black;
+}
+#wrapper {
+  width: 100%;
+  height: 100px;
+  color: white;
+  padding: 4px;
+}
+#message {
+  font-family: Arial, Helvetica, sans-serif;
+  grid-area: message;
+  float: left;
+  width: auto;
+  height: 30px;
+  overflow: auto;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+#post-box {
+  display: grid;
+  width: 60%;
+  min-height: 60px;
+  border: 2px solid #4e5593;
+  margin-bottom: 5px;
+  padding: 20px;
+  grid-template-areas:
+    "pic username ."
+    "pic message ."
+    "comment comment comment"
+    "input2 input2 btn2";
+  grid-template-columns: 80px 1fr;
+  box-shadow: 2px 4px 4px #000000;
+}
+
+#profile-pic {
+  grid-area: pic;
+  height: 65px;
+  width: 65px;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+#username {
+  grid-area: username;
+  float: left;
+  width: auto;
+  height: 30px;
+  overflow: auto;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+#commentBtn {
+  grid-area: btn2;
+  width: auto;
+  height: 45px;
+  cursor: pointer;
+  background-color: #36384a;
+  border: solid 2px #4e5593;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+#commentMsg {
+  grid-area: input2;
+  height: 40px;
+  width: 525px;
+  background-color: #36384a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  border: solid 2px #4e5593;
+  color: white;
+  margin-top: 20px;
+}
+#comment-box {
+  display: grid;
+  width: 200px;
+  min-height: 60px;
+  border: 2px solid #4e5593;
+  margin-bottom: 5px;
+  padding: 20px;
+  grid-template-areas:
+    "pic username ."
+    "pic message ."
+    "comment comment comment";
+  grid-template-columns: 80px 1fr;
+  box-shadow: 2px 4px 4px #000000;
+}
+
+header {
+  display: grid;
+  grid-template-areas: "h1 img img2 logout";
+  grid-template-columns: 20% 10% 1fr 10%;
+}
+
+#img {
+  grid-area: img;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+#profile-img {
+  grid-area: img2;
+  border-radius: 50%;
+  justify-self: right;
+  margin-top: 10px;
+}
+h1 {
+  grid-area: h1;
+}
+
+#logout {
+  grid-area: logout;
+  background-color: rgba(78, 85, 147, 1);
+  color: white;
+  border-radius: 7px;
+  border: 1px solid rgba(78, 85, 147, 1);
+  height: 40px;
+  width: 60%;
+  margin: auto;
+}
+#logout:hover {
+  background-color: #5e67b6;
+  color: black;
+}
